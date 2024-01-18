@@ -51,14 +51,17 @@ boton = tk.Button(raiz, text="Guardar", command=guardarPersonas)
 boton.pack()
 
 # Cargar personas desde el disco duro
-carga = open("jugadores.json",'r')
-cargado = carga.read()
-cargadolista = json.loads(cargado)
-for elemento in cargadolista:
-    persona = Persona()
-    persona.__dict__.update(elemento)
-    personas.append(persona)
-
+try:
+    carga = open("jugadores.json",'r')
+    cargado = carga.read()
+    cargadolista = json.loads(cargado)
+    for elemento in cargadolista:
+        persona = Persona()
+        persona.__dict__.update(elemento)
+        personas.append(persona)
+except:
+    print("error")
+    
 # En la coleccion introduzco instancias de personas en el caso de que no existan
 if len (personas) == 0:
     numeropersonas == len(personas)
