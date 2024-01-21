@@ -4,15 +4,15 @@ import math
 import json
 
 personas = []
-numeropersonas = 20
+numeropersonas = 10
 
 class Persona:
     def __init__(self):
         self.posx = random.randint(0,1024)
         self.posy = random.randint(0,1024)
         self.radio = 30
-        self.direccion = random.randint(0,360)
-        self.color = "green"
+        self.direccion = random.randint(0,36)
+        self.color = "yellow"
         self.entidad = ""
     def dibuja(self):
         self.entidad = lienzo.create_oval(
