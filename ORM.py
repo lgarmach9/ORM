@@ -6,7 +6,7 @@ import sqlite3
 
 #Declaracion de variables globales
 personas = []
-numeropersonas = 50
+numeropersonas = 500
 
 class Persona:
     def __init__(self):
@@ -44,6 +44,10 @@ def guardarPersonas():
     #Guardo los personajes en SQL
     conexion = sqlite3.connect("jugadores.sqlite3")
     cursor = conexion.cursor()
+    cursor.execute('''
+            DELETE FROM jugadores
+            ''')
+    conexion.commit()
     for persona in personas:
         cursor.execute('''
             INSERT INTO jugadores
@@ -91,7 +95,9 @@ try:
     cursor.execute('''
         SELECT *
         FROM jugadores
-        WHERE posx < 100
+        WHERE posx < 512
+        AND
+        posy < 512
         ''')
     while True:
         fila = cursor.fetchone()
