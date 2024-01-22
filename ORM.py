@@ -36,11 +36,11 @@ class Persona:
 
 def guardarPersonas():
     print("Guardo a los jugadores")
-    #Guardo archivo json
+    '''#Guardo archivo json
     cadena = json.dumps([vars(persona) for persona in personas])
     print(cadena)
     archivo = open("jugadores.json",'w')
-    archivo.write(cadena)
+    archivo.write(cadena)'''
     #Guardo los personajes en SQL
     conexion = sqlite3.connect("jugadores.sqlite3")
     cursor = conexion.cursor()
@@ -71,7 +71,7 @@ lienzo.pack()
 boton = tk.Button(raiz, text="Guardar", command=guardarPersonas)
 boton.pack()
 
-# Cargar personas desde el disco duro
+'''# Cargar personas desde el disco duro
 try:
     carga = open("jugadores.json",'r')
     cargado = carga.read()
@@ -81,7 +81,30 @@ try:
         persona.__dict__.update(elemento)
         personas.append(persona)
 except:
-    print("error")
+    print("error")'''
+
+#Cargar personas desde sql
+try:
+    conexion = sqlite3.connect("jugadores.sqlite3")
+    cursor = conexion.cursor()
+
+    cursor.execute("SELECT * FROM jugadores")
+    while True:
+        fila = cursor.fetchone()
+        if fila is None:
+            break
+        persona = Persona()
+        persona.posx= fila[1]
+        persona.posy= fila[2]
+        persona.radio= fila[3]
+        persona.direccion= fila[4]
+        persona.color= fila[5]
+        persona.entidad= fila[6]
+        personas.append(persona)
+        
+    conexion.close()
+except:
+    print("Error al leer base de datos")
     
 # En la coleccion introduzco instancias de personas en el caso de que no existan
 if len (personas) == 0:
