@@ -41,9 +41,9 @@ class Persona:
             fill="blue")
     def mueve(self):
         if self.energia > 0:
-            self.energia -= 1
+            self.energia -= 0.1
         if self.descanso > 0:
-            self.descanso -= 1
+            self.descanso -= 0.1
         self.colisiona()
         lienzo.move(
             self.entidad,
