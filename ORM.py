@@ -19,6 +19,7 @@ class Persona:
         self.descanso = 100
         self.entidadenergia = ""
         self.entidaddescanso = ""
+        self.inventario = [1,2,3,4]
     def dibuja(self):
         self.entidad = lienzo.create_oval(
             self.posx-self.radio/2,
