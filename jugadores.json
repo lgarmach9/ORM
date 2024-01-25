@@ -1,1 +1,307 @@
-[{"posx": 208.8577766143068, "posy": 412.99156589515695, "radio": 30, "direccion": 252.14159265358978, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 522, "posy": 358, "color": "yellow"}]}, {"posx": 46.79356108762174, "posy": 30.130492599860624, "radio": 30, "direccion": 55, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 990, "posy": 401, "color": "yellow"}]}, {"posx": 8.918801293162517, "posy": 176.5579895465343, "radio": 30, "direccion": 175.28318530717956, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 285, "posy": 687, "color": "yellow"}]}, {"posx": 536.9782181669277, "posy": 293.0124963669305, "radio": 30, "direccion": 201, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 696, "posy": 1023, "color": "yellow"}]}, {"posx": 117.27437990359425, "posy": 240.52144136234693, "radio": 30, "direccion": 101.1415926535898, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 353, "posy": 133, "color": "yellow"}]}, {"posx": 105.20940753508455, "posy": 228.05556079763394, "radio": 30, "direccion": 189.14159265358978, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 804, "posy": 364, "color": "yellow"}]}, {"posx": 405.53462197835523, "posy": 506.7695196187757, "radio": 30, "direccion": 196, "color": "yellow", "energia": 46.7000000000018, "descanso": 46.7000000000018, "inventario": [{"posx": 433, "posy": 509, "color": "yellow"}]}]
+[
+    {
+        "posx": 425.7806001223682,
+        "posy": 642.7751350233441,
+        "radio": 30,
+        "direccion": 252.14159265358978,
+        "color": "yellow",
+        "energia": 15.100000000001367,
+        "descanso": 15.100000000001367,
+        "inventario": [
+            {
+                "posx": 659,
+                "posy": 708,
+                "color": "yellow"
+            },
+            {
+                "posx": 702,
+                "posy": 127,
+                "color": "yellow"
+            },
+            {
+                "posx": 728,
+                "posy": 35,
+                "color": "yellow"
+            },
+            {
+                "posx": 603,
+                "posy": 984,
+                "color": "yellow"
+            },
+            {
+                "posx": 337,
+                "posy": 965,
+                "color": "yellow"
+            },
+            {
+                "posx": 577,
+                "posy": 251,
+                "color": "yellow"
+            },
+            {
+                "posx": 220,
+                "posy": 722,
+                "color": "yellow"
+            },
+            {
+                "posx": 778,
+                "posy": 297,
+                "color": "yellow"
+            },
+            {
+                "posx": 864,
+                "posy": 967,
+                "color": "yellow"
+            },
+            {
+                "posx": 563,
+                "posy": 51,
+                "color": "yellow"
+            }
+        ]
+    },
+    {
+        "posx": 41.173364997083276,
+        "posy": 284.0683066329484,
+        "radio": 30,
+        "direccion": 58.1415926535898,
+        "color": "yellow",
+        "energia": 15.100000000001367,
+        "descanso": 15.100000000001367,
+        "inventario": [
+            {
+                "posx": 195,
+                "posy": 883,
+                "color": "yellow"
+            },
+            {
+                "posx": 566,
+                "posy": 749,
+                "color": "yellow"
+            },
+            {
+                "posx": 420,
+                "posy": 136,
+                "color": "yellow"
+            },
+            {
+                "posx": 664,
+                "posy": 153,
+                "color": "yellow"
+            },
+            {
+                "posx": 409,
+                "posy": 60,
+                "color": "yellow"
+            },
+            {
+                "posx": 256,
+                "posy": 924,
+                "color": "yellow"
+            },
+            {
+                "posx": 438,
+                "posy": 829,
+                "color": "yellow"
+            },
+            {
+                "posx": 581,
+                "posy": 388,
+                "color": "yellow"
+            },
+            {
+                "posx": 246,
+                "posy": 539,
+                "color": "yellow"
+            },
+            {
+                "posx": 362,
+                "posy": 464,
+                "color": "yellow"
+            }
+        ]
+    },
+    {
+        "posx": 226.10976392937323,
+        "posy": 12.814025538221818,
+        "radio": 30,
+        "direccion": 178.42477796076935,
+        "color": "yellow",
+        "energia": 15.100000000001367,
+        "descanso": 15.100000000001367,
+        "inventario": [
+            {
+                "posx": 633,
+                "posy": 92,
+                "color": "yellow"
+            },
+            {
+                "posx": 883,
+                "posy": 851,
+                "color": "yellow"
+            },
+            {
+                "posx": 896,
+                "posy": 836,
+                "color": "yellow"
+            },
+            {
+                "posx": 385,
+                "posy": 631,
+                "color": "yellow"
+            },
+            {
+                "posx": 19,
+                "posy": 182,
+                "color": "yellow"
+            },
+            {
+                "posx": 546,
+                "posy": 395,
+                "color": "yellow"
+            },
+            {
+                "posx": 793,
+                "posy": 869,
+                "color": "yellow"
+            },
+            {
+                "posx": 543,
+                "posy": 843,
+                "color": "yellow"
+            },
+            {
+                "posx": 466,
+                "posy": 939,
+                "color": "yellow"
+            },
+            {
+                "posx": 318,
+                "posy": 737,
+                "color": "yellow"
+            }
+        ]
+    },
+    {
+        "posx": 376.16946541569155,
+        "posy": 421.71011291131987,
+        "radio": 30,
+        "direccion": 101.1415926535898,
+        "color": "yellow",
+        "energia": 15.100000000001367,
+        "descanso": 15.100000000001367,
+        "inventario": [
+            {
+                "posx": 25,
+                "posy": 190,
+                "color": "yellow"
+            },
+            {
+                "posx": 168,
+                "posy": 157,
+                "color": "yellow"
+            },
+            {
+                "posx": 629,
+                "posy": 659,
+                "color": "yellow"
+            },
+            {
+                "posx": 330,
+                "posy": 446,
+                "color": "yellow"
+            },
+            {
+                "posx": 579,
+                "posy": 1020,
+                "color": "yellow"
+            },
+            {
+                "posx": 875,
+                "posy": 879,
+                "color": "yellow"
+            },
+            {
+                "posx": 883,
+                "posy": 679,
+                "color": "yellow"
+            },
+            {
+                "posx": 591,
+                "posy": 346,
+                "color": "yellow"
+            },
+            {
+                "posx": 217,
+                "posy": 672,
+                "color": "yellow"
+            },
+            {
+                "posx": 25,
+                "posy": 429,
+                "color": "yellow"
+            }
+        ]
+    },
+    {
+        "posx": 357.52846782844534,
+        "posy": 418.2951250650972,
+        "radio": 30,
+        "direccion": 189.14159265358978,
+        "color": "yellow",
+        "energia": 15.100000000001367,
+        "descanso": 15.100000000001367,
+        "inventario": [
+            {
+                "posx": 333,
+                "posy": 418,
+                "color": "yellow"
+            },
+            {
+                "posx": 394,
+                "posy": 279,
+                "color": "yellow"
+            },
+            {
+                "posx": 408,
+                "posy": 895,
+                "color": "yellow"
+            },
+            {
+                "posx": 852,
+                "posy": 115,
+                "color": "yellow"
+            },
+            {
+                "posx": 410,
+                "posy": 708,
+                "color": "yellow"
+            },
+            {
+                "posx": 1019,
+                "posy": 401,
+                "color": "yellow"
+            },
+            {
+                "posx": 586,
+                "posy": 312,
+                "color": "yellow"
+            },
+            {
+                "posx": 729,
+                "posy": 908,
+                "color": "yellow"
+            },
+            {
+                "posx": 459,
+                "posy": 166,
+                "color": "yellow"
+            },
+            {
+                "posx": 72,
+                "posy": 830,
+                "color": "yellow"
+            }
+        ]
+    }
+]
