@@ -7,13 +7,18 @@ import sqlite3
 #Declaracion de variables globales
 personas = []
 numeropersonas = 50
-class Persona:
+class Entidad:
     def __init__(self):
         self.posx = random.randint(0,1024)
         self.posy = random.randint(0,1024)
+        self.color = "yellow"
+class Recogible (Entidad):
+    def __init__(self):
+        pass
+class Persona (Entidad):
+    def __init__(self):
         self.radio = 30
         self.direccion = random.randint(0,360)
-        self.color = "yellow"
         self.entidad = ""
         self.energia = 100
         self.descanso = 100
@@ -98,7 +103,8 @@ def guardarPersonas():
                 '''+str(persona.energia)+''',
                 '''+str(persona.descanso)+''',
                 "'''+str(persona.entidadenergia)+'''",
-                "'''+str(persona.entidaddescanso)+'''"
+                "'''+str(persona.entidaddescanso)+'''",
+                "'''+str(persona.inventario)+'''"
             )
             ''')
     conexion.commit()
