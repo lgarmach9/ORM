@@ -112,6 +112,9 @@ def guardarPersonas():
     cursor.execute('''
             DELETE FROM jugadores
             ''')
+    cursor.execute('''
+            DELETE FROM recogibles
+            ''')
     conexion.commit()
     for persona in personas:
         cursor.execute('''
@@ -191,9 +194,28 @@ try:
         persona.descanso= fila[8]
         persona.entidadenergia= fila[9]
         persona.entidaddescanso= fila[10]
+       
+        cursor2 = conexion.cursor()
+        nuevapeticion = '''
+            SELECT *
+            FROM recogibles
+            WHERE persona = '''+persona.entidad+ '''
+            '''
+        cursor2.execute(nuevapeticion)
+        while True:
+            fila2 = cursor2.fetchone()
+            if fila2 is None:
+                break
+            nuevorecogible = Recogible()
+            nuevorecogible.posx = fila2[2]
+            nuevorecogible.posy = fila2[3]
+            nuevorecogible.color = fila2[4]
+            persona.inventario.append(nuevorecogible)
+            #pass
+            
         personas.append(persona)
-        
     conexion.close()
+    print(persona)
 except:
     print("Error al leer base de datos")
     
